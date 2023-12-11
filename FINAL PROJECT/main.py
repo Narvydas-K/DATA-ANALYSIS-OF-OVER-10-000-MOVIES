@@ -98,7 +98,7 @@ for link in movie_links:
     movie_data.append({'Title': movie_title, 'Details': movie_details, 'Category': movie_category, 'Rating': movie_rating, 'Votes': movie_votes, 'Director': movie_director})
 
 # Create a DataFrame from the list of movie_data
-df = pd.DataFrame(movie_data)
+# df = pd.DataFrame(movie_data)
 
 # Save the DataFrame to a CSV file
 # df.to_csv('MovieData.csv', index=False)
