@@ -101,7 +101,7 @@ for link in movie_links:
 df = pd.DataFrame(movie_data)
 
 # Save the DataFrame to a CSV file
-df.to_csv('MovieData.csv', index=False)
+# df.to_csv('MovieData.csv', index=False)
 
 # Close the browser window
 driver.quit()
