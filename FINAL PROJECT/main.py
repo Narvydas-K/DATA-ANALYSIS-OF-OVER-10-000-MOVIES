@@ -1,4 +1,8 @@
-#importing required libraries
+#INITIALLY THIS CODE WAS USED TO SCRAPE LINKS TO MOVIES AND MOVIE DATA FROM THE PAGE OF EACH MOVIE,
+#BUT SOME PAGES WERE NOT LOADED DUE TO VARIOUS REASONS (SERVER, CONNECTION, ETC) AND THIS CODE WAS DIVIDED
+#INTO 2 DIFFERENT AND MORE STABLE CODES: 'SCRAPE MOVIE URLS' AND 'SCRAPE DETAILS OF EACH MOVIE' (SEE OTHER FILES)
+#
+# required libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -14,12 +18,12 @@ service = Service(webdriver_path)
 service.start()
 driver = webdriver.Chrome(service=service)
 
-url = "https://www.imdb.com/search/title/?title_type=feature&sort=user_rating,desc&num_votes=3000"
+url = "https://www.imdb.com/search/title/?title_type=feature&sort=user_rating,desc&num_votes=10000"
 driver.get(url)
 
 # Function to scroll down and click the "50 more" button
 def scroll_and_click():
-    for _ in range(1):  # Set the number of times you want to scroll and click
+    for _ in range(200):  # Set the number of times you want to scroll and click
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         time.sleep(2)  # Wait for the page to load
 
@@ -98,10 +102,10 @@ for link in movie_links:
     movie_data.append({'Title': movie_title, 'Details': movie_details, 'Category': movie_category, 'Rating': movie_rating, 'Votes': movie_votes, 'Director': movie_director})
 
 # Create a DataFrame from the list of movie_data
-# df = pd.DataFrame(movie_data)
+df = pd.DataFrame(movie_data)
 
 # Save the DataFrame to a CSV file
-# df.to_csv('MovieData.csv', index=False)
+df.to_csv('MovieData.csv', index=False)
 
 # Close the browser window
 driver.quit()
