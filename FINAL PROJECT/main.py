@@ -20,6 +20,7 @@ driver = webdriver.Chrome(service=service)
 
 url = "https://www.imdb.com/search/title/?title_type=feature&sort=user_rating,desc&num_votes=10000"
 driver.get(url)
+#vidmanto prisijungimas
 
 # Function to scroll down and click the "50 more" button
 def scroll_and_click():
