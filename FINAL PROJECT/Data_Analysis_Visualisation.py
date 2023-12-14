@@ -35,7 +35,6 @@ def value_to_int(x):
     return 0
 
 df['Votes'] = df['Votes'].apply(value_to_int)
-# print(df[['Title', 'Year', 'Length (min)', 'Category', 'Rating', 'Votes', 'Director']].head(100).to_string(index=False))
 
 #1. Creating horizontal bar chart for average ratings by movie category
 avg_category_rating = df.groupby('Category')['Rating'].mean().round(1).sort_values()
@@ -93,10 +92,8 @@ plt.title('Movie Distribution by Category')
 plt.xticks(rotation=45, ha='right')
 plt.show()
 
-df['Year'] = df['Year'].astype(int)
-
 #6. Creating a line chart for average rating by year
-
+df['Year'] = df['Year'].astype(int)
 plt.figure(figsize=(10, 7), facecolor='black')
 ax = plt.axes()
 ax.set_facecolor('black')
@@ -111,10 +108,7 @@ plt.xlabel('Year', color='slateblue', fontsize=18)
 plt.ylabel('Rating', color='slateblue', fontsize=18)
 plt.show()
 
-
-
 #7. Creating a scatter graph to check correlation between movie length and rating:
-
 reitingas = df['Rating']
 ilgis = df['Length (min)']
 plt.figure(facecolor='black')
@@ -132,7 +126,6 @@ plt.plot(np.unique(reitingas), np.poly1d(np.polyfit(reitingas, ilgis, 1))(np.uni
 plt.show()
 
 #8. Creating a line chart to check the number of movies by year
-
 plt.figure(figsize=(10, 7),facecolor='black') #aplink grafika spalva
 ax = plt.axes()
 ax.set_facecolor('black') #paties grafiko spalva

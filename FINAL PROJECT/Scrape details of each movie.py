@@ -2,7 +2,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import re
 
 # Use movie URLs from 'MovieURLs.csv'
 url_df = pd.read_csv('CSV_files/MovieURLs.csv')
