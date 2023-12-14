@@ -29,35 +29,28 @@ Storing scraped details of each movie
 Data_Analysis_Visualisation.py
 Data cleaning, analyzing and visualization
 
-Filmų pasiskirstymas žanruose:
 
-![distribution_by_category.png](Graphs%2Fdistribution_by_category.png)
 
-Vidutinis filmų įvertinimas žanruose:
-
+*1. Creating horizontal bar chart for average ratings by movie category:*
 ![ratings_by_category.png](Graphs%2Fratings_by_category.png)
 
-Vidutinę filmų trukmė žanruose:
-
-![movie_length_by_category.png](Graphs%2Fmovie_length_by_category.png)
-
-TOP filmų direktoriai:
-
+*2. Creating a bar chart to show TOP movie director who created most films with rating >8:*
 ![top_directors.png](Graphs%2Ftop_directors.png)
 
-Filmų ilgis pagal metus:
-
+*3. Creating line Chart for movie lenght distrubution by year:*
 ![movie_length_by_year.png](Graphs%2Fmovie_length_by_year.png)
 
-Filmų ilgio ir įvertinimo koreliacija:
+*4. Creating horizontal bar chart for average movie length by category:*
+![movie_length_by_category.png](Graphs%2Fmovie_length_by_category.png)
 
-![movie_length_rating_correlation.png](Graphs%2Fmovie_length_rating_correlation.png)
+*5. Creating a bar chart for movie distribution by category:*
+![distribution_by_category.png](Graphs%2Fdistribution_by_category.png)
 
-Filmų skaičius metuose:
-
-![number_of_movies_in_year.png](Graphs%2Fnumber_of_movies_in_year.png)
-
-Filmų įvertinimo vidurkis pagal metus:
-
+*6. Creating a line chart for average rating by year:*
 ![rating_by_year.png](Graphs%2Frating_by_year.png)
 
+*7. Creating a scatter graph to check correlation between movie length and rating:*
+![movie_length_rating_correlation.png](Graphs%2Fmovie_length_rating_correlation.png)
+
+*8. Creating a line chart to check the number of movies by year:*
+![number_of_movies_in_year.png](Graphs%2Fnumber_of_movies_in_year.png)

@@ -36,8 +36,8 @@ def value_to_int(x):
 
 df['Votes'] = df['Votes'].apply(value_to_int)
 # print(df[['Title', 'Year', 'Length (min)', 'Category', 'Rating', 'Votes', 'Director']].head(100).to_string(index=False))
-# Kokios kategorijos filmai turi aukščiausius reitingus
-# Creating horizontal bar chart for average ratings by movie category
+
+#1. Creating horizontal bar chart for average ratings by movie category
 avg_category_rating = df.groupby('Category')['Rating'].mean().round(1).sort_values()
 plt.figure(figsize=(10, 6))
 bars = avg_category_rating.plot(kind='barh', color='skyblue')
@@ -49,8 +49,7 @@ plt.ylabel('Category')
 plt.title('Average Ratings by Movie Category')
 plt.show()
 
-# Kokie direktoriai sukūrę daugiau nei vieną filmą su aukštesniu nei 8 reitingu
-# Creating a bar chart to show TOP movie director who created most films with rating >8
+#2. Creating a bar chart to show TOP movie director who created most films with rating >8
 filtered_df = df[df['Rating'] > 8]
 top_10_directors = filtered_df.groupby('Director')['Director'].count().nlargest(10)
 plt.figure(figsize=(10, 6))
@@ -61,8 +60,7 @@ plt.title('Top Movie Directors')
 plt.xticks(rotation=20, ha='right')
 plt.show()
 
-# Ar per metus keitėsi filmų ilgiai
-# Creating Line Chart for movie lenght distrubution by year
+#3. Creating line Chart for movie lenght distrubution by year
 avg_movie_length = df.groupby('Year')['Length (min)'].mean()
 plt.figure(figsize=(10, 6))
 plt.plot(avg_movie_length.index, avg_movie_length.values, marker='o', linestyle='-')
@@ -73,8 +71,7 @@ plt.grid(True)
 plt.xticks(avg_movie_length.index[::10])
 plt.show()
 
-# Kokia vidutinė filmų trukmė kiekvienoje kategorijoje
-# Creating horizontal bar chart for average movie length by category
+#4. Creating horizontal bar chart for average movie length by category
 avg_category_length = df.groupby('Category')['Length (min)'].mean().astype(int).sort_values(ascending=False)
 plt.figure(figsize=(10, 6))
 bars = avg_category_length.plot(kind='barh', color='skyblue')
@@ -86,8 +83,7 @@ plt.ylabel('Category')
 plt.title('Average Movie Length by Category')
 plt.show()
 
-#Filmu pasiskirstymas pagal kategorijas
-#Creating a bar chart for movie distribution by category
+#5. Creating a bar chart for movie distribution by category
 category_distribution = df['Category'].value_counts()
 plt.figure(figsize=(10, 8))
 plt.bar(category_distribution.index, category_distribution, color='skyblue')
@@ -99,7 +95,7 @@ plt.show()
 
 df['Year'] = df['Year'].astype(int)
 
-# Išleidimo metų ir reitingo santykis
+#6. Creating a line chart for average rating by year
 
 plt.figure(figsize=(10, 7), facecolor='black')
 ax = plt.axes()
@@ -117,7 +113,7 @@ plt.show()
 
 
 
-# ar filmų reitingas priklauso nuo filmo ilgio
+#7. Creating a scatter graph to check correlation between movie length and rating:
 
 reitingas = df['Rating']
 ilgis = df['Length (min)']
@@ -135,7 +131,7 @@ plt.yticks(color='white', fontsize=10)
 plt.plot(np.unique(reitingas), np.poly1d(np.polyfit(reitingas, ilgis, 1))(np.unique(reitingas)), color='red')
 plt.show()
 
-#Filmų skaičius metuose
+#8. Creating a line chart to check the number of movies by year
 
 plt.figure(figsize=(10, 7),facecolor='black') #aplink grafika spalva
 ax = plt.axes()
