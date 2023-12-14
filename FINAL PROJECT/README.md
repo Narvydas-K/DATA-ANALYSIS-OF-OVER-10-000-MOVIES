@@ -5,13 +5,13 @@ Created by: Vidmantas Rauda and Narvydas Kareckas
 
 This is the end project of Data Analysis (BIG DATA) course at Vilnius Coding School.
 
-Project theme: Movie data scraping, cleaning, analysis, visualization and extracting meaningful insights. 
+Project theme: Movie data scraping, cleaning, analysis and visualization. 
 
 The main goal of the project is to implement BID DATA analysis methods to find out meaningful insights from analysing data of over 10000 Top rated movies.
 
 In this project we used Python and CSV files showcasing our practical coding skills acquired at Vilnius Coding School.
 
-Applied knowledge:
+**Applied knowledge:**<br><br>
 Used libraries: Pandas, MatplotLib, SeaBorn, Selenium, NumPy, Requests, BeautifulSoup
 
 Scrape movie URLs.py<br>
