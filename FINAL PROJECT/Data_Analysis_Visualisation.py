@@ -97,7 +97,7 @@ plt.title('Movie Distribution by Category')
 plt.xticks(rotation=45, ha='right')
 plt.show()
 
-
+df['Year'] = df['Year'].astype(int)
 
 # Išleidimo metų ir reitingo santykis
 
