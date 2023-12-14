@@ -101,15 +101,15 @@ df['Year'] = df['Year'].astype(int)
 
 # Išleidimo metų ir reitingo santykis
 
-plt.figure(figsize=(10, 10), facecolor='black')
+plt.figure(figsize=(10, 7), facecolor='black')
 ax = plt.axes()
 ax.set_facecolor('black')
 rating_by_year = df.groupby('Year')['Rating'].mean().reset_index()
 sns.lineplot(x='Year', y='Rating', data=rating_by_year, color='tab:purple', linewidth=2.5, marker='.',
              markersize=5)
 plt.grid(color='cyan', linewidth=0.2)
-plt.xticks(rotation=45, ha='right', color='white', fontsize=15)
-plt.yticks(color='white', fontsize=15)
+plt.xticks(rotation=45, ha='right', color='white')
+plt.yticks(color='white')
 plt.title('Rating by year', color='khaki', fontsize=25)
 plt.xlabel('Year', color='slateblue', fontsize=18)
 plt.ylabel('Rating', color='slateblue', fontsize=18)
@@ -137,15 +137,15 @@ plt.show()
 
 #Filmų skaičius metuose
 
-plt.figure(figsize=(10, 10), facecolor='black') #aplink grafika spalva
+plt.figure(figsize=(10, 7),facecolor='black') #aplink grafika spalva
 ax = plt.axes()
 ax.set_facecolor('black') #paties grafiko spalva
 movies_by_year = df.groupby('Year')['Title'].count().reset_index()
 sns.lineplot(x='Year', y='Title', data=movies_by_year, color='tab:purple', linewidth=2.5, marker='.',
              markersize=5)
 plt.grid(color='cyan', linewidth=0.2)
-plt.xticks(rotation=45, ha='right', color='white', fontsize=15)
-plt.yticks(color='white', fontsize=15)
+plt.xticks(rotation=45, ha='right', color='white')
+plt.yticks(color='white')
 plt.title('Number of movies in a year', color='khaki', fontsize=25)
 plt.xlabel('Year', color='slateblue', fontsize=18)
 plt.ylabel('Number of movies', color='slateblue', fontsize=18)
