@@ -4,13 +4,15 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
 import pandas as pd
 
 # Set up Selenium WebDriver
-webdriver_path = "C:/Users/Narvydas/Desktop/chromedriver-win64/chromedriver-win64/chromedriver.exe"
-service = Service(webdriver_path)
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
+
 service.start()
 driver = webdriver.Chrome(service=service)
 
