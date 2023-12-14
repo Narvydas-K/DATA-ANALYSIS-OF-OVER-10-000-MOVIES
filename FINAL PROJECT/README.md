@@ -61,7 +61,7 @@ Data cleaning, analyzing and visualization
 
 ## Conclution<br>
 **Movie data analysis shows that:**
-1.	Movies have the highest average rating in the Documentary (7.7.) and Western (7.6) categories. The lowest average rating scores are in History (6.2) and Horror (6.2) categories.
+1.	Movies have the highest average rating in the Documentary (7.7) and Western (7.6) categories. The lowest average rating scores are in History (6.2) and Horror (6.2) categories.
 2.	Top movie directors, who created the most movies with ratings > 8 are Akira Kurosawa (10 movies) and Martin Scorsese (9 movies).
 3.	From 1915 to 1965 average movie length varied a lot (from 30 to 190 minutes) and from 1966 until now average movie length normalized and was between 100 and 120 minutes.
 4.	The longest movies on average are in the Biography (122 min) category and the shortest ones (93 min) are in the Animation and Music categories.
