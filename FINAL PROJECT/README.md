@@ -1,6 +1,6 @@
 # MOVIE RATINGS ANALYSIS
 
-**Details**<br><br>
+**Details:**<br><br>
 Created by: Vidmantas Rauda and Narvydas Kareckas
 
 This is the end project of Data Analysis (BIG DATA) course at Vilnius Coding School.
