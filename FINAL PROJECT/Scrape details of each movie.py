@@ -5,7 +5,7 @@ import pandas as pd
 import re
 
 # Use movie URLs from 'MovieURLs.csv'
-url_df = pd.read_csv('MovieURLs.csv')
+url_df = pd.read_csv('CSV_files/MovieURLs.csv')
 movie_urls = url_df['Movie URLs'].tolist()
 
 # Create an empty list to store data of each movie

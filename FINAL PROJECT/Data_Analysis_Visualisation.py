@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-file_path = 'MovieData.csv'
+file_path = 'CSV_files/MovieData.csv'
 df = pd.read_csv(file_path)
 
 #extracting information about hours from 'details' and converting to int
