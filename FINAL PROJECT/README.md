@@ -28,3 +28,36 @@ Storing scraped details of each movie
 
 Data_Analysis_Visualisation.py
 Data cleaning, analyzing and visualization
+
+Filmų pasiskirstymas žanruose:
+
+![distribution_by_category.png](Graphs%2Fdistribution_by_category.png)
+
+Vidutinis filmų įvertinimas žanruose:
+
+![ratings_by_category.png](Graphs%2Fratings_by_category.png)
+
+Vidutinę filmų trukmė žanruose:
+
+![movie_length_by_category.png](Graphs%2Fmovie_length_by_category.png)
+
+TOP filmų direktoriai:
+
+![top_directors.png](Graphs%2Ftop_directors.png)
+
+Filmų ilgis pagal metus:
+
+![movie_length_by_year.png](Graphs%2Fmovie_length_by_year.png)
+
+Filmų ilgio ir įvertinimo koreliacija:
+
+![movie_length_rating_correlation.png](Graphs%2Fmovie_length_rating_correlation.png)
+
+Filmų skaičius metuose:
+
+![number_of_movies_in_year.png](Graphs%2Fnumber_of_movies_in_year.png)
+
+Filmų įvertinimo vidurkis pagal metus:
+
+![rating_by_year.png](Graphs%2Frating_by_year.png)
+
