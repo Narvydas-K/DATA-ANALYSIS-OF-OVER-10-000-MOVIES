@@ -14,10 +14,10 @@ In this project we used Python and CSV files showcasing our practical coding ski
 **Applied knowledge:**<br><br>
 Used libraries: Pandas, MatplotLib, SeaBorn, Selenium, NumPy, Requests, BeautifulSoup
 
+**Files:**<br><br>
 Scrape movie URLs.py<br>
 Getting URLs of each movie from movie list https://www.imdb.com/search/title/?title_type=feature&sort=user_rating,desc&num_votes=10000 
 
-**Files:**<br><br>
 MovieURLs.csv<br>
 Storing scraped movie URLs into one file
 
@@ -61,12 +61,12 @@ Data cleaning, analyzing and visualization
 
 ## Conclution<br>
 **Movie data analysis shows that:**
-1.	Movies have the highest average rating in the Documentary (7.7.) and Western (7.6) categories. The lowest average rating movies have in History (6.2) and Horror (6.2) categories.
+1.	Movies have the highest average rating in the Documentary (7.7.) and Western (7.6) categories. The lowest average rating scores are in History (6.2) and Horror (6.2) categories.
 2.	Top movie directors, who created the most movies with ratings > 8 are Akira Kurosawa (10 movies) and Martin Scorsese (9 movies).
-3.	From 1915 to 1965 average movie length varied a lot (from 30 to 190 minutes) and from 1966 average movie length normalized and was between 100 and 120 minutes.
-4.	The longest movies are common for the Biography (122 min) category and the shortest (93 min.) for the Animation and Music categories.
-5.	Most films were released in the Comedy, Action, and Drama categories, and movies from all remaining categories are much less popular.
-6.	Recently released movies have an average rating of 6.5 – 6.75 and the highest rating (over 8) are movies that were released in 1921 and 1926.
+3.	From 1915 to 1965 average movie length varied a lot (from 30 to 190 minutes) and from 1966 until now average movie length normalized and was between 100 and 120 minutes.
+4.	The longest movies on average are in the Biography (122 min) category and the shortest ones (93 min) are in the Animation and Music categories.
+5.	Most films were released in the Comedy, Action, and Drama categories, and movies from all remaining categories are a lot less common.
+6.	Recently released movies have an average rating of 6.5 – 6.75 and movies with the highest rating (over 8) were released in 1921 and 1926.
 7.	Longer movies have slightly better average ratings.
 8.	Every year a bigger number of top-rated movies is released. Especially from 1980 to 2018 this curve is very steep. Since 2019 this number has decreased. This can be due to various reasons, one of them – being that we analyzed only movies with over 10000 votes and newer movies didn’t have enough time to get this number of votes.
 
