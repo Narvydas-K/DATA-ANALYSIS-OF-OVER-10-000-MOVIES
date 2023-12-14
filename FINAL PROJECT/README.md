@@ -1,4 +1,4 @@
-# MOVIE RATINGS ANALYSIS
+# DATA ANALYSIS OF OVER 10,000 MOVIES
 
 **Details:**<br><br>
 Created by: Vidmantas Rauda and Narvydas Kareckas
