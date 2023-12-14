@@ -17,6 +17,7 @@ Used libraries: Pandas, MatplotLib, SeaBorn, Selenium, NumPy, Requests, Beautifu
 Scrape movie URLs.py<br>
 Getting URLs of each movie from movie list https://www.imdb.com/search/title/?title_type=feature&sort=user_rating,desc&num_votes=10000 
 
+**Files:**<br><br>
 MovieURLs.csv<br>
 Storing scraped movie URLs into one file
 
@@ -28,6 +29,8 @@ Storing scraped details of each movie
 
 Data_Analysis_Visualisation.py<br>
 Data cleaning, analyzing and visualization
+<br><br>
+## Vizualizations
 
 
 
@@ -40,13 +43,13 @@ Data cleaning, analyzing and visualization
 #### 3. Line Chart for movie lenght distrubution by year:
 ![movie_length_by_year.png](Graphs%2Fmovie_length_by_year.png)
 
-#### *4. Horizontal bar chart for average movie length by category:
+#### 4. Horizontal bar chart for average movie length by category:
 ![movie_length_by_category.png](Graphs%2Fmovie_length_by_category.png)
 
-#### *5. Bar chart for movie distribution by category:
+#### 5. Bar chart for movie distribution by category:
 ![distribution_by_category.png](Graphs%2Fdistribution_by_category.png)
 
-#### *6. Line chart for average rating by year:
+#### 6. Line chart for average rating by year:
 ![rating_by_year.png](Graphs%2Frating_by_year.png)
 
 #### 7. Scatter graph to check correlation between movie length and rating:
@@ -57,12 +60,13 @@ Data cleaning, analyzing and visualization
 
 
 ## Conclution<br>
-***Movie data analysis shows that:***
-1.	Most films were released in Comedy, Action and Drama categories, and movies from all remaining categories are much less popular.
-2.	Movies have the highest average rating in the Documentary (7.7.) and Western (7.6) categories. The lowest average rating movies have in History (6.2) and Horror (6.2) categories.
-3.	The longest movies are common for the Biography (122 min) category and the shortest (93 min.) for the Animation and Music categories.
-4.	Top movie directors, who created the most movies with ratings > 8 are Akira Kurosawa (10 movies) and Martin Scorsese (9 movies)
-5.	From 1915 to1965 average movie length varied a lot (from 30 to 190 minutes) and from 1966 average movie length normalized and was between 100 and 120 minutes.
-6.	Longer movies have better average ratings
-7.	Every year a bigger number of top-rated movies is released. Especially from 1980 to 2018 this curve is very steep. Since 2019 this number has decreased. This can be due to various reasons, one of them – being that we analyzed only movies with over 10000 votes and movies didn’t have enough time to get this number of votes.
-8.	Recently released movies have an average rating of 6.5 – 6.75 and the highest rating (over 8) are movies that were released in 1921 and 1926.
+**Movie data analysis shows that:**
+1.	Movies have the highest average rating in the Documentary (7.7.) and Western (7.6) categories. The lowest average rating movies have in History (6.2) and Horror (6.2) categories.
+2.	Top movie directors, who created the most movies with ratings > 8 are Akira Kurosawa (10 movies) and Martin Scorsese (9 movies).
+3.	From 1915 to 1965 average movie length varied a lot (from 30 to 190 minutes) and from 1966 average movie length normalized and was between 100 and 120 minutes.
+4.	The longest movies are common for the Biography (122 min) category and the shortest (93 min.) for the Animation and Music categories.
+5.	Most films were released in the Comedy, Action, and Drama categories, and movies from all remaining categories are much less popular.
+6.	Recently released movies have an average rating of 6.5 – 6.75 and the highest rating (over 8) are movies that were released in 1921 and 1926.
+7.	Longer movies have slightly better average ratings.
+8.	Every year a bigger number of top-rated movies is released. Especially from 1980 to 2018 this curve is very steep. Since 2019 this number has decreased. This can be due to various reasons, one of them – being that we analyzed only movies with over 10000 votes and newer movies didn’t have enough time to get this number of votes.
+
